@@ -1,6 +1,3 @@
-/// <summary>
-/// Represents a scripture reference (e.g., "John 3:16" or "Proverbs 3:5-6").
-/// </summary>
 public class Reference
 {
     private string _book;
@@ -8,9 +5,6 @@ public class Reference
     private int _startVerse;
     private int _endVerse;
 
-    /// <summary>
-    /// Constructor for a single verse reference (e.g., "John 3:16").
-    /// </summary>
     public Reference(string book, int chapter, int verse)
     {
         _book = book;
@@ -19,9 +13,6 @@ public class Reference
         _endVerse = verse;
     }
 
-    /// <summary>
-    /// Constructor for a verse range reference (e.g., "Proverbs 3:5-6").
-    /// </summary>
     public Reference(string book, int chapter, int startVerse, int endVerse)
     {
         _book = book;
@@ -30,9 +21,6 @@ public class Reference
         _endVerse = endVerse;
     }
 
-    /// <summary>
-    /// Returns the formatted reference string.
-    /// </summary>
     public string GetDisplayText()
     {
         if (_startVerse == _endVerse)
