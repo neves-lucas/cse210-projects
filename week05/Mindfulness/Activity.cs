@@ -66,4 +66,9 @@ public class Activity
             Console.Write("\b \b");
         }
     }
+
+    public int GetDuration()
+    {
+        return _duration;
+    }
 }
